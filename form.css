@@ -1,0 +1,196 @@
+/* 1 - retirando os padrões do navegador.
+   2 - adicionando fontes e background*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F0EBF8;
+    
+}
+
+/* resetando cor dos h, paragráfos e labels */
+
+h1, h2, h3, h4, h5 {
+	color: rgb(19, 18, 18);
+}
+
+p, label {
+	color: rgb(68, 68, 68);
+}
+
+/* definir altura dos input ( caixas ) e textarea */
+
+input[type=text], input[type=number], input[type=date], input[type=file] {
+    width: 400px;
+}
+
+textarea {
+    padding: 10px 5px;
+    width: 400px;
+}
+/* 
+1 - adicionei uma borda transparente ( fazendo sumir )
+2 - coloquei um border-botttom cor cinza 
+3 - Padding para afastar as linhas (cima e baixo )*/
+
+input {
+    border: 1px solid transparent;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0px; 
+
+}
+/*cabeçalho da pagina
+1- adicionei um background
+2- defini o padding ( distância da margem ) 
+3- defini a altura ( height )*/
+
+.header {
+    background-color: #673AB7;
+    padding: 20px;
+    height: 160px;
+    
+}
+
+/* Definir cor h3 da header e onde irá ficar atrâves da margin */
+
+.header h3 {
+    color: #fff;
+    margin-top: 0px;
+}
+
+/* container do formulário 
+1 - coloquei as margens dá esquerda e direita no auto e a posição relativa, 
+assim centraliza a pagina. 
+2 -  adicionei o fundo branco.
+3 - coloquei para esse container tomar 60% da tela.
+4 - diminuir o top para 62pxs negativos para tomar uma parte do cabeçalho.*/
+
+.form-container {
+	background-color: #FFF;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	top: -62px;
+ 
+}
+
+/* cabeçalho do formulário 
+1 - Coloquei uma borda
+2 - regulei a altura*/
+
+.form-header {
+    border-bottom: 1px solid #fad1ffb9;
+    height: 45px;
+}
+
+/* Paragráfo do Cabeçalho 
+1 - coloquei uma cor no paragráfo
+2 - centralizei com margins-auto
+3-  adicionei um border bottom 
+4 - regulei a altura
+5 - defini a largura para 45px ( mesmo tamanho da linha do cabeçalho ) 
+6 - Coloquei uma altura de linha para centralizar o texto verticalmente
+7 - por ultimo, adicionei trasnformação de texto para uppercase ( deixar Maiúsculo */
+
+.form-header p {
+    color: #673AB7;
+	border-bottom: 2px solid #673AB7;
+	width: 100px; /* "largura da linha" */
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	text-transform: uppercase;
+	height: 45px; 
+	line-height: 45px; /* se alinha com a linha verticalmente */
+    
+}
+
+/* Corpo do formulário */
+
+/* padding para afastar tudo das bordas do formulário */
+
+.form-body {
+    padding: 30px;
+}
+
+/* coloquei a margin 0 para não atrapalhar o layout, já que o header já tem 
+e pode influenciar */
+
+.form-title {
+    margin: 0px;
+}
+
+/* estilizando os box input 
+margin-bottom para ganhar uma distancia na parte de baixo*/
+
+.box-input {
+    margin-bottom: 30px;
+}
+
+/* display block para alinhar o formulário */
+
+.block {
+    display: block;
+}
+
+/* Container do Formulário
+info - O padding fica dentro da margem */
+
+/* Utilizei o display inline-block para manter 
+as lista de opções, uma do lado da outra,
+e utilizei margin rigth para afastar as box da outra.*/
+
+.optional_box {
+    display: inline-block;
+    margin-right: 30px;
+    
+}
+
+.optional_list {
+    padding-left: 0px;
+}
+
+/* retirando os pontinhos da lista */
+
+.optional_list li {
+    list-style: none;
+}
+
+/* Botão Submit 
+1- adicionei uma cor ao botão
+2 - '' uma cor as letras dele
+3 - '' borda transparente
+4 - '' largura e altura
+5 - '' transformação de texto para ficar maiúsculo
+6 - '' cursor pointer ( mãozinha do mouse ) 
+7 - '' transition( tempo de mudar a forma do botão para outra quando cursor estiver encima */
+
+.btn-submit {
+    background-color: #673AB7;
+    color: #fff;
+    border: 2px solid transparent;
+    width: 150px;
+    height: 50px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .5s;
+
+}
+
+/* continuando a transfomação do botão submit 
+1 - Adicionei seletor houve - irá fazer uma animação quando o cursor for colocado
+2 - '' background branco - significa que irá ficar branco ao colocar o cursor encima do botão
+3 - '' cor roxo  */
+
+.btn-submit:hover {
+	background-color: #FFF;
+	border-color: #673AB7;
+	color: #673AB7
+}
+
+/* Estilizei o span * do required */
+.required-field {
+    color: red;
+}
